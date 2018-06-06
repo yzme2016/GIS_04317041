@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="455dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:hint="Hari ini"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etLokasi"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_horizontal"
+            android:hint="Masukkan Lokasi"
+            android:inputType="textPersonName"
+            android:paddingTop="5dp" />
+
+        <Button
+            android:id="@+id/btnTampil"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="Tampilkan Long/Lat"
+
+
+            />
+
+        <TextView
+            android:id="@+id/tvLong"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="Longitude"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvLat"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Lattitude"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnMapN"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="Tampilkan Dalam Maps" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
